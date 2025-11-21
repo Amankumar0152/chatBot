@@ -3,4 +3,7 @@ package com.chatbot.chatbot.repo;
 import com.chatbot.chatbot.model.ChatMessage;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ChatMessageRepo extends JpaRepository<ChatMessage, Long> {}
+public interface ChatMessageRepo extends JpaRepository<ChatMessage, Long>
+{
+
+}
