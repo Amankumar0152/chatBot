@@ -20,9 +20,8 @@ public class ChatService {
 
     public String getBotReply(String userMessage) {
 
-        String url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=" + apiKey;
+        String url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro-latest:generateContent?key=" + apiKey;
 
-        // ✅ FIXED JSON STRUCTURE
         JSONObject request = new JSONObject()
                 .put("contents", new JSONArray()
                         .put(new JSONObject()
